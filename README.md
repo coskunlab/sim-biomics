@@ -1,4 +1,4 @@
-<img width="1125" height="1500" alt="image" src="https://github.com/user-attachments/assets/9fad432a-3e4d-465c-97cb-11a600015c19" /># SIM-BIOMICS
+# SIM-BIOMICS
 
 ### Overview and Repository Structure
 This repository contains the notebooks to produce results from the paper "Spatial renal biomarker discovery using multiplexed immunofluorescent and high-dimensional colorimetric staining."
