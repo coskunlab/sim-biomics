@@ -45,6 +45,9 @@ Notebooks in folder 06_mapping fibrosis can be used for detecting fibrosis subty
 
 <img width="358" height="357" alt="image" src="https://github.com/user-attachments/assets/9e463c51-533e-468b-acc3-c31d1bd2550d" />
 
+`project_cell_protein_fibrosis_barcodes.ipynb` can be used to create and project cells based on cell-protein barcodes, cell-fibrosis barcodes or cell-protein-fibrosis barcodes. 
+
+
 
 
 
