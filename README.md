@@ -1,4 +1,4 @@
-# SIM-BIOMICS
+<img width="1125" height="1500" alt="image" src="https://github.com/user-attachments/assets/9fad432a-3e4d-465c-97cb-11a600015c19" /># SIM-BIOMICS
 
 ### Overview and Repository Structure
 This repository contains the notebooks to produce results from the paper "Spatial renal biomarker discovery using multiplexed immunofluorescent and high-dimensional colorimetric staining."
@@ -22,9 +22,16 @@ Notebooks in folder 04_inflammatory_spatial_niches can be used to barcode each i
 
 <img width="1125" height="1500" alt="image" src="https://github.com/user-attachments/assets/d255478e-76d9-4b05-8f6b-9dc195b1a9f3" />
 
-Notebooks in folder 05_glomerulosclerosis detection can be used for comparison and classification of globally sclerotic and non-globally sclerotic glomeruli. Glomeruli are barcoded based using `create_glomerulus_pixel_barcodes.ipynb`. A model is trained and evaluated for glomerulosclerosis detection using `predict_globally_sclerotic_glomeruli.ipynb`. PAS and Trichrome features are compared between globally sclerotic and non globally sclerotic glomeruli using `compare_cell_density_fibrosis_between_sclerotic_non_sclerotic_glomeruli.ipynb`.
+Notebooks in folder 05_glomerulosclerosis detection can be used for comparison and classification of globally sclerotic and non-globally sclerotic glomeruli. Glomeruli are barcoded based using `create_glomerulus_pixel_barcodes.ipynb`. A model is trained and evaluated for glomerulosclerosis detection using `predict_globally_sclerotic_glomeruli.ipynb`. 
 
-<img width="462" height="460" alt="image" src="https://github.com/user-attachments/assets/ccb63c62-04a1-4862-96d7-6c87665fd5d0" />
+<img width="1028" height="393" alt="image" src="https://github.com/user-attachments/assets/d0af04c3-c54e-4a00-9477-7d92ac7144af" />
+
+
+PAS and Trichrome features are compared between globally sclerotic and non globally sclerotic glomeruli using `compare_cell_density_fibrosis_between_sclerotic_non_sclerotic_glomeruli.ipynb`.
+
+<img width="819" height="641" alt="image" src="https://github.com/user-attachments/assets/a81d737a-658e-47f1-b0df-6a0544ee725a" />
+
+
 
 
 
