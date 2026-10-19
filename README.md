@@ -47,6 +47,48 @@ Notebooks in folder 06_mapping fibrosis can be used for detecting fibrosis subty
 
 `project_cell_protein_fibrosis_barcodes.ipynb` can be used to create and project cells based on cell-protein barcodes, cell-fibrosis barcodes or cell-protein-fibrosis barcodes. 
 
+### Environments
+The env folder contains requirements.txt file for the five main environments used with this pipeline:
+stitch_subtract_af  
+- stitch_subtract_af 
+
+registration 
+- compare registration_algorithms 
+- register_interstitium_mask 
+
+cell_phenotyping 
+- compute_registration_quality
+- quantify_background
+- quantify_IF_image_bleaching
+- quantify_tissue_distortion_due_to_multiplexing
+- visualize_color_stain_regions
+- cell_segmentation_clustering
+- cell_segmentation_for_registration_quality
+- generate_cell_expression_phenotype_statistics
+- compute_channel_contributions_to_pixel_clusters
+- compute_probability_cluster_neighbors
+- quantify_cluster_concordance
+- visualize_cluster_distribution_across_wsi
+- visualize_pixel_clustering_heatmap
+- All notebooks in 04_inflammatory_spatial_niches
+- All notebooks in 05_glomerulosclerosis_detection except color_deconvolution
+- compute_fibrosis_distribution_across_wsi
+- fibrosis_barycentric_projection
+- compare_real_virtual_stain_quality
+- project_cell_protein_fibrosis_barcodes 
+
+napari 
+- overlay_cell_type_on_fibrosis_clustermap 
+
+pixel_clustering_som 
+- compare_pixel_clustering_algorithm_run_time
+- compute_optimal_som_cluster_number
+- pixel_clustering_som 
+- segment_fibrosis_edema_inflammation.ipynb 
+
+color_deconvolution  
+- color_deconvolution 
+- quantify_color_image_bleaching 
 
 
 
