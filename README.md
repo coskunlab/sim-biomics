@@ -90,7 +90,10 @@ pixel_clustering_som
 
 color_deconvolution  
 - color_deconvolution 
-- quantify_color_image_bleaching 
+- quantify_color_image_bleaching
+
+virtual_staining
+- All virtual staining notebooks except compare_real_virtual_stain_quality
 
 
 
