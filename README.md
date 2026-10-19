@@ -35,8 +35,8 @@ PAS and Trichrome features are compared between globally sclerotic and non globa
 Notebooks in folder 06_mapping fibrosis can be used for detecting fibrosis subtypes in a tissue and identifying cell populations involved in fibrosis. 
 
 `segment_fibrosis_edema_inflammation.ipynb` can be used to segment i-IFTA, established fibrosis and diffuse fibrosis in a tissue and produce a fibrosis segmentation map. 
+<img width="501" height="396" alt="image" src="https://github.com/user-attachments/assets/f9187c89-006e-4dd8-a8c4-053b1649d7ff" />
 
-<img width="763" height="621" alt="image" src="https://github.com/user-attachments/assets/18fd5ae1-92dc-487b-bdf6-313a2b0f7b75" />
 
 `compute_fibrosis_distribution_across_wsi.ipynb` can be used to compute the proportion of different fibrosis subtypes per tile across the tissue 
 
