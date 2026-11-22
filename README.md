@@ -82,6 +82,7 @@ cell_phenotyping (Python 3.10.19)
 - fibrosis_barycentric_projection
 - compare_real_virtual_stain_quality
 - project_cell_protein_fibrosis_barcodes
+
 To create this environment:
 run `conda create -n cell_phenotyping python=3.10.19`
 pip install deepcell
