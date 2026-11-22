@@ -54,14 +54,15 @@ Notebooks in folder 06_mapping fibrosis can be used for detecting fibrosis subty
 
 ### Environments
 The env folder contains requirements.txt file for the five main environments used with this pipeline:
-stitch_subtract_af  
+
+stitch_subtract_af (Python 3.13.2)
 - stitch_subtract_af 
 
-registration 
+registration (Python 3.13.2)
 - compare registration_algorithms 
 - register_interstitium_mask 
 
-cell_phenotyping 
+cell_phenotyping (Python 3.10.19)
 - compute_registration_quality
 - quantify_background
 - quantify_IF_image_bleaching
@@ -82,20 +83,20 @@ cell_phenotyping
 - compare_real_virtual_stain_quality
 - project_cell_protein_fibrosis_barcodes 
 
-napari 
+napari (Python 3.9.20)
 - overlay_cell_type_on_fibrosis_clustermap 
 
-pixel_clustering_som 
+pixel_clustering_som (Python 3.11.11)
 - compare_pixel_clustering_algorithm_run_time
 - compute_optimal_som_cluster_number
 - pixel_clustering_som 
 - segment_fibrosis_edema_inflammation.ipynb 
 
-color_deconvolution  
+color_deconvolution (Python 3.13.5)
 - color_deconvolution 
 - quantify_color_image_bleaching
 
-virtual_staining
+virtual_staining 
 - All virtual staining notebooks except compare_real_virtual_stain_quality
 
 
