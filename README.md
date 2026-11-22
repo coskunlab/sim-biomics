@@ -92,23 +92,42 @@ pip install pandas scikit-image imagecodecs tifffile matplotlib scipy distinctip
 virtual_staining_evaluation_venv (Python 3.10.19)
 - compare_real_virtual_stain_quality.ipynb
 To create this environment:
-run `conda create -n cell_phenotyping_venv python=3.10.19`
+run `conda create -n virtual_staining_evaluation_venv python=3.10.19`
 conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1  pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install lpips pathlib scikit-image matplotlib pytorch_msssim tqdm
 
-napari (Python 3.9.20)
+napari_venv (Python 3.10.19)
 - overlay_cell_type_on_fibrosis_clustermap
 - fibrosis_barycentric_projection
+  
+napari 0.7 must be installed
+To create this environment:
+run `conda create -n napari_venv python=3.10.19`
+python -m pip install "napari[all]<0.8.0"
+pip install opencv-python==4.11.0.86
+pip install tifffile matplotlib pathlib pandas tqdm scikit-image scipy distinctipy
+
 
 pixel_clustering_som (Python 3.11.11)
 - compare_pixel_clustering_algorithm_run_time
 - compute_optimal_som_cluster_number
 - pixel_clustering_som 
-- segment_fibrosis_edema_inflammation.ipynb 
+- segment_fibrosis_edema_inflammation.ipynb
+  
+To create this environment run  `conda create -n pixel_clustering_som_venv python=3.11.11`
+pip install pyFlowSOM pathlib tifffile pandas scikit-learn scipy matplotlib-scalebar matplotlib alpineer pyarrow parc  tqdm tqdm-joblib joblib seaborn opencv-python distinctipy
 
 color_deconvolution (Python 3.13.5)
 - color_deconvolution 
 - quantify_color_image_bleaching
+
+To create this environment run  `conda create -n color_deconvolution_venv python=3.13.5`
+conda install -c conda-forge large-image
+conda install -c conda-forge large-image-source-gdal
+conda install -c conda-forge large-image-source-tiff
+git clone https://github.com/DigitalSlideArchive/HistomicsTK.git
+cd HistomicsTK
+$ pip install -e .
 
 virtual_staining 
 - All virtual staining notebooks except compare_real_virtual_stain_quality
