@@ -62,7 +62,7 @@ registration (Python 3.13.2)
 - compare registration_algorithms 
 - register_interstitium_mask 
 
-cell_phenotyping (Python 3.10.19)
+cell_phenotyping_venv (Python 3.10.19)
 - compute_registration_quality
 - quantify_background
 - quantify_IF_image_bleaching
@@ -79,19 +79,26 @@ cell_phenotyping (Python 3.10.19)
 - All notebooks in 04_inflammatory_spatial_niches
 - All notebooks in 05_glomerulosclerosis_detection except color_deconvolution
 - compute_fibrosis_distribution_across_wsi
-- fibrosis_barycentric_projection
 - compare_real_virtual_stain_quality
 - project_cell_protein_fibrosis_barcodes
 
 To create this environment:
-run `conda create -n cell_phenotyping python=3.10.19`
+run `conda create -n cell_phenotyping_venv python=3.10.19`
 pip install deepcell
 pip install opencv-python==4.11.0.86
 pip install scanpy==1.10.2
-pip install pandas scikit-image imagecodecs tifffile matplotlib scipy distinctipy pathlib pyarrow dask scikit-image tqdm igraph leidenalg
+pip install pandas scikit-image imagecodecs tifffile matplotlib scipy distinctipy pathlib pyarrow dask scikit-image tqdm igraph leidenalg statannotations matplotlib-scalebar umap-learn tqdm-joblib joblib imblearn statistics
+
+virtual_staining_evaluation_venv (Python 3.10.19)
+- compare_real_virtual_stain_quality.ipynb
+To create this environment:
+run `conda create -n cell_phenotyping_venv python=3.10.19`
+conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1  pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install lpips pathlib scikit-image matplotlib pytorch_msssim tqdm
 
 napari (Python 3.9.20)
-- overlay_cell_type_on_fibrosis_clustermap 
+- overlay_cell_type_on_fibrosis_clustermap
+- fibrosis_barycentric_projection
 
 pixel_clustering_som (Python 3.11.11)
 - compare_pixel_clustering_algorithm_run_time
