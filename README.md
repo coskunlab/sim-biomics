@@ -81,7 +81,13 @@ cell_phenotyping (Python 3.10.19)
 - compute_fibrosis_distribution_across_wsi
 - fibrosis_barycentric_projection
 - compare_real_virtual_stain_quality
-- project_cell_protein_fibrosis_barcodes 
+- project_cell_protein_fibrosis_barcodes
+To create this environment:
+run `conda create -n cell_phenotyping python=3.10.19`
+pip install deepcell
+pip install opencv-python==4.11.0.86
+pip install scanpy==1.10.2
+pip install pandas scikit-image imagecodecs tifffile matplotlib scipy distinctipy pathlib pyarrow dask scikit-image tqdm igraph leidenalg
 
 napari (Python 3.9.20)
 - overlay_cell_type_on_fibrosis_clustermap 
