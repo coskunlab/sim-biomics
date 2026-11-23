@@ -122,12 +122,19 @@ color_deconvolution (Python 3.13.5)
 - quantify_color_image_bleaching
 
 To create this environment run  `conda create -n color_deconvolution_venv python=3.13.5`
+Follow instructions for libvips installation: https://www.libvips.org/install.html
+pip install pyvips 
 conda install -c conda-forge large-image
 conda install -c conda-forge large-image-source-gdal
 conda install -c conda-forge large-image-source-tiff
+pip install large-image-converter[sources] --find-links https://girder.github.io/large_image_wheels
+pip install cmake
+pip install pylibtiff
 git clone https://github.com/DigitalSlideArchive/HistomicsTK.git
 cd HistomicsTK
-$ pip install -e .
+python -m pip install setuptools-scm "Cython>=0.25.2" "scikit-build>=0.8.1" "cmake>=0.6.0" "numpy>=1.12.1"
+python -m pip install -e .
+pip install pathlib tifffile matplotlib 
 
 virtual_staining 
 - All virtual staining notebooks except compare_real_virtual_stain_quality
