@@ -54,14 +54,21 @@ Notebooks in folder 06_mapping fibrosis can be used for detecting fibrosis subty
 
 ### Environments
 The env folder contains requirements.txt file for the five main environments used with this pipeline:
-stitch_subtract_af  
-- stitch_subtract_af 
 
-registration 
+stitch_subtract_af (Python 3.13.2)
+- stitch_subtract_af
+To create this environment:
+run `conda create -n stitch_subtract_af_venv python=3.13.2`
+pip install numpy tqdm datetime joblib tifffile pathlib opencv-python scikit-image dask 
+
+registration (Python 3.13.2)
 - compare registration_algorithms 
-- register_interstitium_mask 
+- register_interstitium_mask
+To create this environment:
+run `conda create -n registration_venv python=3.13.2`
+pip install pathlib opencv-python dask tifffile numpy scikit-image matplotlib tqdm
 
-cell_phenotyping 
+cell_phenotyping_venv (Python 3.10.19)
 - compute_registration_quality
 - quantify_background
 - quantify_IF_image_bleaching
@@ -78,24 +85,64 @@ cell_phenotyping
 - All notebooks in 04_inflammatory_spatial_niches
 - All notebooks in 05_glomerulosclerosis_detection except color_deconvolution
 - compute_fibrosis_distribution_across_wsi
-- fibrosis_barycentric_projection
 - compare_real_virtual_stain_quality
-- project_cell_protein_fibrosis_barcodes 
+- project_cell_protein_fibrosis_barcodes
 
-napari 
-- overlay_cell_type_on_fibrosis_clustermap 
+To create this environment:
+run `conda create -n cell_phenotyping_venv python=3.10.19`
+pip install deepcell
+pip install opencv-python==4.11.0.86
+pip install scanpy==1.10.2
+pip install pandas scikit-image imagecodecs tifffile matplotlib scipy distinctipy pathlib pyarrow dask scikit-image tqdm igraph leidenalg statannotations matplotlib-scalebar umap-learn tqdm-joblib joblib imblearn statistics
 
-pixel_clustering_som 
+virtual_staining_evaluation_venv (Python 3.10.19)
+- compare_real_virtual_stain_quality.ipynb
+To create this environment:
+run `conda create -n virtual_staining_evaluation_venv python=3.10.19`
+conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1  pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install lpips pathlib scikit-image matplotlib pytorch_msssim tqdm
+
+napari_venv (Python 3.10.19)
+- overlay_cell_type_on_fibrosis_clustermap
+- fibrosis_barycentric_projection
+  
+napari 0.7 must be installed
+To create this environment:
+run `conda create -n napari_venv python=3.10.19`
+python -m pip install "napari[all]<0.8.0"
+pip install opencv-python==4.11.0.86
+pip install tifffile matplotlib pathlib pandas tqdm scikit-image scipy distinctipy
+
+
+pixel_clustering_som (Python 3.11.11)
 - compare_pixel_clustering_algorithm_run_time
 - compute_optimal_som_cluster_number
 - pixel_clustering_som 
-- segment_fibrosis_edema_inflammation.ipynb 
+- segment_fibrosis_edema_inflammation.ipynb
+  
+To create this environment run  `conda create -n pixel_clustering_som_venv python=3.11.11`
+pip install pyFlowSOM pathlib tifffile pandas scikit-learn scipy matplotlib-scalebar matplotlib alpineer pyarrow parc  tqdm tqdm-joblib joblib seaborn opencv-python distinctipy
 
-color_deconvolution  
+color_deconvolution (Python 3.13.5)
 - color_deconvolution 
 - quantify_color_image_bleaching
 
-virtual_staining
+To create this environment run  `conda create -n color_deconvolution_venv python=3.13.5`
+Follow instructions for libvips installation: https://www.libvips.org/install.html
+pip install pyvips 
+conda install -c conda-forge large-image
+conda install -c conda-forge large-image-source-gdal
+conda install -c conda-forge large-image-source-tiff
+pip install large-image-converter[sources] --find-links https://girder.github.io/large_image_wheels
+pip install cmake
+pip install pylibtiff
+git clone https://github.com/DigitalSlideArchive/HistomicsTK.git
+cd HistomicsTK
+python -m pip install setuptools-scm "Cython>=0.25.2" "scikit-build>=0.8.1" "cmake>=0.6.0" "numpy>=1.12.1"
+python -m pip install -e .
+pip install pathlib tifffile matplotlib 
+
+virtual_staining 
 - All virtual staining notebooks except compare_real_virtual_stain_quality
 
 
