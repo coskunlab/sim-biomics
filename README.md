@@ -6,6 +6,8 @@ This repository contains the notebooks to produce results from the paper "Spatia
 ### Usage 
 Operating System: Tested on Windows 11 (64-bit)\
 GPU: NVIDIA CUDA-enabled	recommended for DeepCell performance
+Installation Time: on the order of 10 minutes
+Demo Time: on the order of 20 minutes
 
 ### Examples  
 Notebooks in folder 01_image_processing align images of the same tissue across stains:  
