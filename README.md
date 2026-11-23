@@ -4,6 +4,8 @@
 This repository contains the notebooks to produce results from the paper "Spatial renal biomarker discovery using multiplexed immunofluorescent and high-dimensional colorimetric staining."
 
 ### Usage 
+Operating System: Tested on Windows 11 (64-bit)\
+GPU (optional)	NVIDIA CUDA-enabled	recommended for DeepCell performance\
 ### Examples  
 Notebooks in folder 01_image_processing align images of the same tissue across stains:  
 
