@@ -56,11 +56,17 @@ Notebooks in folder 06_mapping fibrosis can be used for detecting fibrosis subty
 The env folder contains requirements.txt file for the five main environments used with this pipeline:
 
 stitch_subtract_af (Python 3.13.2)
-- stitch_subtract_af 
+- stitch_subtract_af
+To create this environment:
+run `conda create -n stitch_subtract_af_venv python=3.13.2`
+pip install numpy tqdm datetime joblib tifffile pathlib opencv-python scikit-image dask 
 
 registration (Python 3.13.2)
 - compare registration_algorithms 
-- register_interstitium_mask 
+- register_interstitium_mask
+To create this environment:
+run `conda create -n registration_venv python=3.13.2`
+pip install pathlib opencv-python dask tifffile numpy scikit-image matplotlib tqdm
 
 cell_phenotyping_venv (Python 3.10.19)
 - compute_registration_quality
