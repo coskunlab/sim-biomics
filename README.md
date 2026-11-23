@@ -144,7 +144,7 @@ p`ython -m pip install -e .`\
 
 virtual_staining 
 - All virtual staining notebooks except compare_real_virtual_stain_quality
-- Create environment from requirements.txt file
+Create environment from requirements.txt file
 
 
 
