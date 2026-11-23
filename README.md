@@ -57,7 +57,7 @@ stitch_subtract_af (Python 3.13.2)
 - stitch_subtract_af\
 To create this environment:\
 `conda create -n stitch_subtract_af_venv python=3.13.2`\
-`pip install numpy tqdm datetime joblib tifffile pathlib opencv-python scikit-image dask`\
+`pip install numpy tqdm datetime joblib tifffile pathlib opencv-python scikit-image dask`
 
 registration (Python 3.13.2)
 - compare registration_algorithms 
@@ -91,14 +91,14 @@ To create this environment:\
 `pip install deepcell`\
 `pip install opencv-python==4.11.0.86`\
 `pip install scanpy==1.10.2`\
-`pip install pandas scikit-image imagecodecs tifffile matplotlib scipy distinctipy pathlib pyarrow dask scikit-image tqdm igraph leidenalg statannotations matplotlib-scalebar umap-learn tqdm-joblib joblib imblearn statistics`\
+`pip install pandas scikit-image imagecodecs tifffile matplotlib scipy distinctipy pathlib pyarrow dask scikit-image tqdm igraph leidenalg statannotations matplotlib-scalebar umap-learn tqdm-joblib joblib imblearn statistics`
 
 virtual_staining_evaluation_venv (Python 3.10.19)
 - compare_real_virtual_stain_quality.ipynb\
 To create this environment:\
 `conda create -n virtual_staining_evaluation_venv python=3.10.19`\
 `conda install pytorch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1  pytorch-cuda=11.8 -c pytorch -c nvidia`\
-`pip install lpips pathlib scikit-image matplotlib pytorch_msssim tqdm`\
+`pip install lpips pathlib scikit-image matplotlib pytorch_msssim tqdm`
 
 napari_venv (Python 3.10.19)
 - overlay_cell_type_on_fibrosis_clustermap
@@ -109,7 +109,7 @@ To create this environment:\
 `conda create -n napari_venv python=3.10.19`\
 `python -m pip install "napari[all]<0.8.0"`\
 `pip install opencv-python==4.11.0.86`\
-`pip install tifffile matplotlib pathlib pandas tqdm scikit-image scipy distinctipy`\
+`pip install tifffile matplotlib pathlib pandas tqdm scikit-image scipy distinctipy`
 
 
 pixel_clustering_som (Python 3.11.11)
@@ -120,7 +120,7 @@ pixel_clustering_som (Python 3.11.11)
   
 To create this environment:\
 `conda create -n pixel_clustering_som_venv python=3.11.11`\
-`pip install pyFlowSOM pathlib tifffile pandas scikit-learn scipy matplotlib-scalebar matplotlib alpineer pyarrow parc  tqdm tqdm-joblib joblib seaborn opencv-python distinctipy`\
+`pip install pyFlowSOM pathlib tifffile pandas scikit-learn scipy matplotlib-scalebar matplotlib alpineer pyarrow parc  tqdm tqdm-joblib joblib seaborn opencv-python distinctipy`
 
 color_deconvolution (Python 3.13.5)
 - color_deconvolution 
@@ -140,10 +140,11 @@ Follow instructions for libvips installation: https://www.libvips.org/install.ht
 `cd HistomicsTK`\
 `python -m pip install setuptools-scm "Cython>=0.25.2" "scikit-build>=0.8.1" "cmake>=0.6.0" "numpy>=1.12.1"`\
 p`ython -m pip install -e .`\
-`pip install pathlib tifffile matplotlib`\
+`pip install pathlib tifffile matplotlib`
 
 virtual_staining 
 - All virtual staining notebooks except compare_real_virtual_stain_quality
+- Create environment from requirements.txt file
 
 
 
