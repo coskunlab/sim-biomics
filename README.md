@@ -151,7 +151,12 @@ virtual_staining
 - All virtual staining notebooks except compare_real_virtual_stain_quality\
 Create environment from requirements.txt file
 
-If you use this code, please cite this work (in revision at Nature Communications): Kumar AA, Kordic I, Hung A, Rodriguez Ardao S, Pi M, Miryala M, Das S, Pham TD, Kwun J, Kim SC, Larsen CP, Farris AB, Wall SM, Coskun AF. Spatial renal biomarker discovery using multiplexed immunofluorescent and high-dimensional colorimetric staining, 
+### Citation 
+If you use this code, please cite this work (in revision at Nature Communications): Kumar AA, Kordic I, Hung A, Rodriguez Ardao S, Pi M, Miryala M, Das S, Pham TD, Kwun J, Kim SC, Larsen CP, Farris AB, Wall SM, Coskun AF. **Spatial renal biomarker discovery using multiplexed immunofluorescent and high-dimensional colorimetric staining **
+
+### Contact 
+Correspondence: ahmet.coskun@bme.gatech.edu
+
 
 
 
