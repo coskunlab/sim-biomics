@@ -148,8 +148,11 @@ p`ython -m pip install -e .`\
 `pip install pathlib tifffile matplotlib`
 
 virtual_staining 
-- All virtual staining notebooks except compare_real_virtual_stain_quality
+- All virtual staining notebooks except compare_real_virtual_stain_quality\
 Create environment from requirements.txt file
+
+If use this code, please cite this work (under review at Nature Communications): Kumar AA, Kordic I, Hung A, Rodriguez Ardao S, Pi M, Miryala M, Das S, Pham TD, Kwun J, Kim SC, Larsen CP, Farris AB, Wall SM, Coskun AF. Spatial renal biomarker discovery using multiplexed immunofluorescent and high-dimensional colorimetric staining, 
+
 
 
 
