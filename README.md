@@ -133,7 +133,7 @@ color_deconvolution (Python 3.13.5)
 
 To create this environment:\
 `conda create -n color_deconvolution_venv python=3.13.5`\
-Follow instructions for libvips installation: https://www.libvips.org/install.html\
+Follow instructions for libvips installation: https://www.libvips.org/install.html<br>
 `pip install pyvips`\
 `conda install -c conda-forge large-image`\
 `conda install -c conda-forge large-image-source-gdal`\
@@ -149,7 +149,8 @@ p`ython -m pip install -e .`\
 
 virtual_staining 
 - All virtual staining notebooks except compare_real_virtual_stain_quality\
-Create environment from requirements.txt file
+Create environment from requirements.txt file\
+Additional information can be found here: https://github.com/junyanz/pytorch-cyclegan-and-pix2pix
 
 ### Citation 
 If you use this code, please cite this work (in revision at Nature Communications):\
